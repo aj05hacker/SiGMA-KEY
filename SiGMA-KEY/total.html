@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="15;url=no-back.html">
+    <link rel="stylesheet" href="./style.css">
+    <style src="./script.js"></style>
+    <style>* {
+        box-sizing: border-box;
+        color:white;
+    }
+    
+        
+    
+    
+            /* Add background image to the body */
+            body {
+                background-image: url('./assets/kye.jpeg'); /* Replace 'your-background-image.jpg' with the path to your image */
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+    
+    
+    
+    
+    
+    
+    body {
+        margin: 0;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #555;
+        background-color: #ffffff;
+        min-height: 100vh;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 430px;
+        padding: 60px 35px 35px;
+        border-radius: 40px;
+        background-color: #ecf0f3;
+        box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    }
+    
+    .card-header h5 {
+        text-align: center;
+        font-size: 28px;
+        padding-top: 24px;
+        letter-spacing: 0.5px;
+    }
+    
+    .card-footer {
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    .card-footer a {
+        text-decoration: none;
+        color: #aaa;
+        font-size: 15px;
+    }
+    
+    .input-group {
+        margin-bottom: 30px;
+        border-radius: 25px;
+        box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+    }
+    
+    .input-group .form-control {
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 18px;
+        color: #555;
+        padding: 20px 10px 20px 5px;
+    }
+    
+    .input-group .input-group-text {
+        height: 22px;
+        margin: 0 10px -3px 25px;
+    }
+    
+    .btn-primary {
+        cursor: pointer;
+        width: 100%;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-color: #02c8db;
+        box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+        transition: all 0.5s;
+    }
+    
+    .btn-primary:hover {
+        background-color: #50e5b9;
+    }
+    
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+        .card {
+            padding: 40px 20px 20px;
+        }
+        
+        .input-group .form-control {
+            font-size: 16px;
+        }
+        
+        .btn-primary {
+            height: 50px;
+            font-size: 18px;
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #countdown-box {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+        display: none; /* Initially hidden */
+    }
+    
+    /* Color change animation */
+    @keyframes colorChange {
+        0% {
+            background-color: #3498db;
+        }
+        50% {
+            background-color: #e74c3c;
+        }
+        100% {
+            background-color: #3498db;
+        }
+    }
+    
+    /* Add background image to the body */
+    body {
+        background-image: url('/home/abdul-hajees/Desktop/SiGMA-KEY/assets/key.jpeg'); /* Replace 'your-background-image.jpg' with the path to your image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+
+    
+    input::placeholder {
+        color:#e74c3c; /* Replace with your desired color code */
+    }
+    
+    
+            /* Add background image to the body */
+            body {
+                background-image: url('./assets/kye.jpeg'); /* Replace 'your-background-image.jpg' with the path to your image */
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+    </style>
+
+
+    <title>SiGMA_login</title>
+</head>
+<body>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <div class="input-group">
+                <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
+                        <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+                        <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z"/>
+                    </svg>
+                </span>
+                <b><input type="text" class="form-control" id="username" placeholder="Enter your user name"></b>
+            </div>
+
+            <label for="file" class="form-label">Authentication Key </label>
+            <div class="input-group">
+                <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-key" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.21 11.85h-.87L.83 13.64H.79v-1.79H0v3.999h.791v-1.283l.41-.466 1.12 1.749h.951l-1.488-2.276 1.427-1.723Zm2.903 3.352h-1.79v-1.073h1.685v-.606H4.323v-1.025h1.79v-.648H3.538v3.999h2.575v-.647Zm2.243-.888v1.535h-.794v-1.52L6.223 11.85H7.1l.853 1.696h.032l.855-1.696h.856l-1.339 2.464Z"/>
+                    </svg>
+                </span>
+                <input type="file" class="form-control" id="file" name="file" accept=".sigma">
+                <small class="text-danger" id="fileError"></small>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block"><b>VERIFY</b></button>
+
+        <div id="countdown-box">
+            3:00
+        </div>
+    </form>
+
+<script src="script.js"></script>
+
+
+<script>
+    const uploadForm = document.getElementById("uploadForm");
+const fileInput = document.getElementById("file");
+const fileError = document.getElementById("fileError");
+const countdownBox = document.getElementById("countdown-box");
+let uploadAttempts = 0;
+let countdownSeconds = 180; // 3 minutes
+let countdownInterval; // Variable to hold the countdown interval
+
+// Function to disable the file input and enable it after a specified time
+function disableFileInput() {
+    fileInput.disabled = true;
+    countdownBox.style.display = "block";
+    document.body.style.backgroundColor = "black"; // Set the background color to black
+
+    countdownInterval = setInterval(() => {
+        const minutes = Math.floor(countdownSeconds / 60);
+        const seconds = countdownSeconds % 60;
+        countdownBox.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        countdownSeconds--;
+
+        if (countdownSeconds < 0) {
+            clearInterval(countdownInterval);
+            fileInput.disabled = false;
+            countdownBox.style.display = "none";
+            document.body.style.backgroundColor = ""; // Reset the background color
+            countdownSeconds = 180; // Reset the countdown timer
+            uploadAttempts = 0; // Reset the upload attempts
+        }
+    }, 1000); // Update the countdown every 1 second
+}
+
+uploadForm.addEventListener("submit", async function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    const allowedExtensions = [".sigma"];
+    const fileName = fileInput.value;
+    const fileExtension = fileName.substring(fileName.lastIndexOf("."));
+
+    if (!allowedExtensions.includes(fileExtension.toLowerCase())) {
+        fileError.textContent = "Only .sigma files are allowed.";
+        return;
+    } else {
+        fileError.textContent = ""; // Clear any previous error message
+    }
+
+    if (uploadAttempts >= 3) {
+        alert("You have reached the maximum upload attempts. Please try again later.");
+        disableFileInput();
+        return;
+    }
+
+    // Read the file contents
+    const file = fileInput.files[0];
+    const fileReader = new FileReader();
+
+    fileReader.onload = function () {
+        const fileContent = fileReader.result;
+
+        // Check if the file content exactly matches "SiGMA"
+        if (fileContent.trim() === "SiGMA") {
+            alert("Logged In");
+            uploadAttempts = 0; // Reset the upload attempts upon successful login
+        } else {
+            alert("Wrong Key");
+            uploadAttempts++;
+        }
+    };
+
+    fileReader.readAsText(file);
+});
+
+
+
+
+        // Function to disable back navigation
+        function disableBackNavigation() {
+            window.history.pushState(null, null, window.location.href);
+            window.onpopstate = function () {
+                window.history.pushState(null, null, window.location.href);
+            };
+        }
+
+        // Call the function to disable back navigation
+        disableBackNavigation();
+
+</script>
+
+</body>
+</html>
